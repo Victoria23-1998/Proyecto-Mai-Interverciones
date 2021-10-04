@@ -1,0 +1,16 @@
+:root {
+    --my-color: #F0AC6A;
+    --my-textColor:#000000;
+    --my-SecondColor:#384E81;
+    --my-fuenteParrafos:'Fira Sans', sans-serif;
+    --my-fuenteTitulos:'Syncopate', sans-serif;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
