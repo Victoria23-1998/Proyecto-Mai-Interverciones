@@ -11,6 +11,18 @@
     padding: 0;
     box-sizing: border-box;
 }
+.navbar-toggler{
+    border: none;
+   
+}
+.navbar{
+    border-top: 4px solid transparent !important;
+    border-image-source:url(https://s3-alpha-sig.figma.com/img/e12a/81a8/9d4cc68f435939ae8ea58114a2a151bc?Expires=1634515200&Signature=KouUeN8zqWOr08Zdv-HBj4OvR9ir6vfuBxhI7vgAphxA85yWSXzP0kJewXjXEeSa6JF5JWL-FDTSPFfHgtNKczgIv5~AI-5-5v79q~mGeVIMVYx-fLd8~PPTTm3~vxiu5Fyhdwb8VXpph5Kjd1h2KfNOahRUZDRWKa5zGqJR6~CBy1oN9aPPAO~FqULA9LqXAELFiitzjbgKqpfNDFwuTEdslc~7HpBG6Uu~Mxp56oEpY9mbXjmGt1jstTgWLSKVTdqrz0ZDXnK78yxUk6Sc8URAVMtV7CK4Rkeo0bLLq8AuNjwXTmfn2cd4WcaVWvm7cwaRL9G59elR2plbT~ofqA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA) ;
+    border-image-slice: 1%;
+    height: 55px;
+}
+
+
 
 
 
