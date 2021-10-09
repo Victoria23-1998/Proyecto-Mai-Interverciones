@@ -28,6 +28,9 @@ body{
     border-image-source:url(https://s3-alpha-sig.figma.com/img/e12a/81a8/9d4cc68f435939ae8ea58114a2a151bc?Expires=1634515200&Signature=KouUeN8zqWOr08Zdv-HBj4OvR9ir6vfuBxhI7vgAphxA85yWSXzP0kJewXjXEeSa6JF5JWL-FDTSPFfHgtNKczgIv5~AI-5-5v79q~mGeVIMVYx-fLd8~PPTTm3~vxiu5Fyhdwb8VXpph5Kjd1h2KfNOahRUZDRWKa5zGqJR6~CBy1oN9aPPAO~FqULA9LqXAELFiitzjbgKqpfNDFwuTEdslc~7HpBG6Uu~Mxp56oEpY9mbXjmGt1jstTgWLSKVTdqrz0ZDXnK78yxUk6Sc8URAVMtV7CK4Rkeo0bLLq8AuNjwXTmfn2cd4WcaVWvm7cwaRL9G59elR2plbT~ofqA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA) ;
     border-image-slice: 1%;
     height: 55px;
+    position:fixed;
+    width: 100%;
+   padding-right: 10px;
 }
 .nav-item a{
     font-family: var(--my-fuenteTitulos);
@@ -45,6 +48,7 @@ body{
 .imagenPrincipal img{
     width: 100%;
     height:auto;
+  
    
 }
 
@@ -127,7 +131,7 @@ body{
     margin-top: auto;
 }
 .contaminacion{
-    width: 100px;
+    width: 100%;
     grid-area: a3;
     margin-bottom: auto;
 
@@ -208,9 +212,13 @@ width: 100%;
     margin-bottom: 15px;
 }
 .imagenEncargos{
+        
+    height:auto;
     width: 100%;
-    padding-left: 30px;
-    padding-right: 30px;
+   
+    margin-top: auto;
+    grid-area: a2;
+    padding-right: 0px;
 
 }
 .imagenEncargos img{
@@ -222,19 +230,107 @@ width: 100%;
 .mancha2{
     width: 150px;
     display: block;
-    margin-left: auto;
+   
 }
 .encargos{
     margin-top: 40px;
+    
 }
 .contentEnvio{
     margin-top:  40px;
 }
+.diseño{
+    background-color: #384e8117 ;
+}
+.contenedorGlobal{
+    width: 100% !important;
+    background-color:transparent;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+.diseño{
+    position: relative;
+    padding-bottom: 40px;
+    width: 100%;
+}
+.mancha2{
+    display:block;
+    position: absolute;
+    
+    margin-top:75px;
+    width: 150px!important;
+    transform: translateX(calc((100vw - 100%)/ 2));
+    
+    
+}
+
+
+/*--------------CUIDADOS---------------------*/
+
+.cuidados{
+    background-color: #384E81;
+    
+}
+
+.cuidados h2{
+    text-align: center;
+    font-family: var(--my-fuenteTitulos);
+    font-size: 1.3rem;
+    margin-bottom: 0px;
+}
+
+.cuidados p{
+    color: #ffffff;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+    margin-top:15px;
+    margin-bottom: 15px;
+}
+
+
+/*--------------BENEFICIOS---------------------*/
+
+.beneficios h2{
+    text-align: center;
+    font-family: var(--my-fuenteTitulos);
+    font-size: 1.3rem;
+    margin-bottom: 0px;
+}
+.beneficios, .fondo{
+    background-color: #384E81;    
+}
+
+.beneficios p{
+    color: #ffffff;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+    margin-top:15px;
+    margin-bottom: 15px;
+}
+
+
+/*--------------CONTACTO---------------------*/
+.contacto h2{
+    text-align: center;
+    font-family: var(--my-fuenteTitulos);
+    font-size: 1.3rem;
+    margin-bottom: 0px;
+}
+
+
+
+
+
+/*------------------------------------*/
 
 @media screen  and (min-width:759px){
     .imagenPrincipal img{
         width: 100%;
         height:auto;
+        padding-right: 0px;
     }
     .envio{
         border-right: 4px solid var(--my-SecondColor);
@@ -258,7 +354,7 @@ width: 100%;
         font-size: 1.5rem;
     }
     .contaminacion{
-        width: 350px;
+        width: 100%;
     }
     .mancha1{
         width: 200px;
@@ -277,32 +373,46 @@ width: 100%;
         margin-right: 150px;
     }
     .encargos{
-        margin-top: 80px;
+       
         display: grid;
         grid-template-columns: 40% 60%;
-        grid-template-rows: auto auto auto;
-        grid-template-areas: "a4 a4"
-                             "a3 a1"
-                             "a3 a2";
+        grid-template-rows: auto;
+        grid-template-areas: 
+                             "a2 a3";
+       
     }
     .encargos h2{
         font-size: 1.5rem;
-        grid-area: a4;
+        /*grid-area: a4;*/
+    }
+    .parrafoE{
+        margin-top: 150px;
+        grid-area: a3;
+        padding-left: 0px;
+    }
+    .diseño{
+        position: relative;
+        width: 100%;
     }
     .mancha2{
-        width: 350px;
-        grid-area: a1;
+        display: block;
+        position: absolute;
+      
+        width: 300px!important;
+        margin-left:350px;
+        margin-top: 200px;
     }
   
-    .encargos p {
-        grid-area: a2;
-    }
+    
     .imagenEncargos{
-        grid-area: a3;
-        height:200px;
-        width: 80%;
-        margin-left: auto;
+        
+        height:auto;
+        width: 450px;
+       
         margin-top: auto;
+        grid-area: a2;
+        padding-right: 0px;
+
     }
     .nav-item a{
         border: none;
