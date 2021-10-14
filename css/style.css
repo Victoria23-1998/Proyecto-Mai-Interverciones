@@ -332,6 +332,7 @@ width: 100%;
         height:auto;
         padding-right: 0px;
     }
+  
     .envio{
         border-right: 4px solid var(--my-SecondColor);
     }
