@@ -529,4 +529,29 @@ margin-bottom: 50px;
    .imgBneficios img{
        width: 170px;
    }
+   #cuidados{
+       height: 320px;
+   }
+   #cuidados p{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+   }
+   .fondo1 img{
+       width:7.125rem;
+   }
+   .man2 img{
+    width: 170px ;
+   }
+   #beneficios{
+       height: 430px;
+   }
+   #beneficios p{
+    margin-top: auto;
+    margin-bottom: auto;
+   }
+   .imgBneficios img{
+       width: 154px;
+   }
 }
