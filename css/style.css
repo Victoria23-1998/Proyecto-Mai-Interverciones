@@ -31,6 +31,11 @@ body{
    
     width: 100%;
    padding-right: 10px;
+  
+   position: fixed;
+   z-index: 25;
+   
+   
 }
 .nav-item a{
     font-family: var(--my-fuenteTitulos);
@@ -369,6 +374,10 @@ margin-bottom: 50px;
     margin-left: auto;
     margin-right: auto;
    }
+   .slide img{
+    
+    margin-top: 50px;
+}
 /*------------------------------------*/
 
 @media screen  and (min-width:759px){
@@ -555,6 +564,7 @@ margin-bottom: 50px;
        width: 154px;
    }
    .slide img{
-       height: 450px;
+       height: auto;
+       margin-top: 40px;
    }
 }
